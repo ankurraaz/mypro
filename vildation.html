@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title> vildation form js</title>
+    <script>
+        function validate()
+        {
+        var name = f1.t1.value;
+        var pass = f1.t2.value ;
+        var cpass = f1.pass.value ;
+        if(name ==null || name ="")
+        {
+            alert("enter name");
+            return 0 ;
+        }
+      } 
+    </script>
+</head>
+<body>
+    <form name ="f1">
+        <table>
+            <tr>
+                <td> enter name : </td>
+                <td> <input type ="text" name="t1"></td>
+            </tr>
+            <tr>
+                <td> enter password : </td>
+                <td> <input type ="password" name="t2"></td>
+            </tr>
+            <tr>
+                <td> enter confirmed password : </td>
+                <td> <input type ="password" name="pass"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type ="button" value ="validate" onclick ="validate()">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
